@@ -8,10 +8,11 @@ import { deleteEmpService } from '../apiservices/EmployeesServices';
 const EmployeesItem = (props)=>{
     
     const {emp} = props;
-    const img_url = 'http://127.0.0.1:8000' + emp.avtar;
+    const img_url = 'https://djangoreactt.pythonanywhere.com/' + emp.avtar;
 
     const [showUpdateModal, setUpdateModal] = useState(false);
     const [empData, setEmpData] = useState(props.emp);
+   
 
 
     function updateHandler(e, emp){
@@ -45,6 +46,23 @@ const EmployeesItem = (props)=>{
         }
     }
 
+    // getting random css color for table row
+    function getRandomItem(arr) {
+
+        // get random index value
+        const randomIndex = Math.floor(Math.random() * arr.length);
+
+        // get random item
+        const item = arr[randomIndex];
+
+        return item;
+    }
+    const colors = ['success', 'primary', 'info', 'warning'];
+
+
+    const color = getRandomItem(colors);
+
+
     return(
         <>
         <tr>
@@ -69,7 +87,7 @@ const EmployeesItem = (props)=>{
             <td>{emp.salary}</td>
 
             <td>
-                <MDBBadge color='success' pill>
+                    <MDBBadge color={color} pill>
                     {emp.status}
                 </MDBBadge>
             </td>

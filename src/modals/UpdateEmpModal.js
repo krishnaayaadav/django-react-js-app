@@ -20,7 +20,7 @@ import { updateEmpService } from '../apiservices/EmployeesServices';
 
 export default function UpdateEmpModal(props) {
     const emp = props.emp;
-    const img_url = 'http://127.0.0.1:8000' + emp.avtar;
+    const img_url = 'https://djangoreactt.pythonanywhere.com/' + emp.avtar;
 
 
     const [file, setFile] = useState({

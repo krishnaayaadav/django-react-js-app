@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { MDBBadge, MDBBtn, MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 
-// const colors = ['success', 'primary', 'info', 'warning'];
 
 import { getAllEmpService  } from '../apiservices/EmployeesServices';
 import EmployeesItem from './EmployeeItem';

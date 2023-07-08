@@ -1,4 +1,5 @@
 import './App.css';
+import logo from './static/images/logo.png';
 
 import EmployeesList from './components/EmployeeList';
 
