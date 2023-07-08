@@ -33,3 +33,47 @@ body {
   margin: 0px;
   margin-right: 10px;
 }
+
+.table-wrapper {
+  margin-top: 3px;
+  background: #fff;
+  padding: 20px 25px;
+  margin: 30px 0;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.table-title {
+  padding-bottom: 15px;
+  background: #2b4170;
+  color: #fff;
+  padding: 16px 30px;
+  margin: -20px -25px 10px;
+  border-radius: 3px 3px 0 0;
+}
+
+.table-title h2 {
+  margin: 5px 0 0;
+  font-size: 24px;
+}
+
+.addbtn {
+  background: #fff !important;
+  color: #435d7d;
+}
+
+.addbtn:hover {
+  background: #4263a9 !important;
+  color: #fff !important;
+
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(18, 16, 16);
+  text-align: center;
+  margin-bottom: 3px;
+}

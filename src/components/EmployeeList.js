@@ -50,7 +50,22 @@ export default function EmployeesList() {
 
     return (
         <div>
+
             <MsgModal show={showMsg} setMsg={setMsg} magData = {msgData}></MsgModal>
+            <div className="table-title">
+                <div className="row my-1">
+                    <div className="col-sm-6">
+                        <h2>Employees<b> Management </b>System</h2>
+                    </div>
+
+
+                    <div className="col-sm-6">
+                        <MDBBtn className='addbtn' color='link' rounded size='sm' onClick={(e) => { (setAddModal(true)) }} >
+                            Add New Employee
+                        </MDBBtn>
+                    </div>
+                </div>
+            </div>
             <MDBTable align='middle'>
                 <MDBTableHead>
                     <tr>
@@ -76,7 +91,6 @@ export default function EmployeesList() {
                 </MDBTableBody>
             </MDBTable>
             <AddEmpModal show={showAddModal} setAddModal={setAddModal} setUpdated={setUpdated}></AddEmpModal>
-            <MDBBtn rounded onClick={ (e) => { (setAddModal(true)) } }>Add Employee </MDBBtn>
         </div>
     );
 }
