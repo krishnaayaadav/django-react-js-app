@@ -1,5 +1,13 @@
 # Getting Started with Create React App
 
+![reactjs-fullStack-app](https://github.com/krishnapb01/react-js-crud-ui/assets/123397686/537c5f14-782a-44e8-9a1b-00fb9c80c8c9)
+
+
+React App Deployed On VerCel
+Live projects: https://react-js-crud-ui.vercel.app/
+
+Rest-API Deployed On PythonAnyWhere: https://djangoreactt.pythonanywhere.com/api/documentation/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
