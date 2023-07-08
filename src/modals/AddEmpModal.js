@@ -41,6 +41,10 @@ export default function AddEmpModal(props) {
     const toggleShow = (e) => {
         e.preventDefault();
         props.setAddModal(!props.show);
+        setMSG({
+            success_msg: null,
+            errors_msg: null
+        })
 
     };
 
