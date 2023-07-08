@@ -7,6 +7,7 @@ import { getAllEmpService  } from '../apiservices/EmployeesServices';
 import EmployeesItem from './EmployeeItem';
 
 import AddEmpModal from '../modals/AddEmpModal';
+import MsgModal from '../modals/MsgModal';
 
 export default function EmployeesList() {
 
@@ -14,8 +15,10 @@ export default function EmployeesList() {
     const [isUpdated, setUpdated]   = useState(false);
     const [showAddModal, setAddModal] = useState(false);
 
-
-
+    const [showMsg, setMsg]           = useState(false);
+    const [msgData, setMsgData]       = useState({
+        data: null
+    });
 
     useEffect( ()=> {
         let mouted = true;
@@ -28,7 +31,7 @@ export default function EmployeesList() {
             // if status is 200 ok response than save the emp data change state
             if(response.status === 200){
                 setEmployees(response.data)
-                console.log(response.data)
+                // console.log(response.data)
             }
            },
 
@@ -47,12 +50,15 @@ export default function EmployeesList() {
 
     return (
         <div>
+            <MsgModal show={showMsg} setMsg={setMsg} magData = {msgData}></MsgModal>
             <MDBTable align='middle'>
                 <MDBTableHead>
                     <tr>
                         <th scope='col'>Name</th>
                         <th scope='col'>Title</th>
+                        <th scope='col'>Salary</th>
                         <th scope='col'>Status</th>
+
                         <th scope='col'>Position</th>
                         <th scope='col'>Actions</th>
                     </tr>
@@ -62,7 +68,7 @@ export default function EmployeesList() {
 
                     {
                         employees.map( emp => (
-                            <EmployeesItem emp={emp} />
+                            <EmployeesItem key={emp.id} emp={emp} setUpdated={setUpdated} setMsg={setMsg} setMsgData={setMsgData}   />
                         ) )
                     }
                 

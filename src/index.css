@@ -27,3 +27,9 @@ body {
 .error_msg {
   color: rgb(253, 12, 12);
 }
+
+.update_img{
+  padding: 0px;
+  margin: 0px;
+  margin-right: 10px;
+}
