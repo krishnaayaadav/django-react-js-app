@@ -16,3 +16,14 @@ code {
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
+
+.success_msg, .error_msg{
+  padding: 3px;
+  font-size: 18px;
+  color: rgb(15, 202, 15);
+  text-decoration: double;
+}
+
+.error_msg {
+  color: rgb(253, 12, 12);
+}
