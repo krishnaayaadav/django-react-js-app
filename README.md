@@ -7,6 +7,8 @@ Live projects: https://react-js-crud-ui.vercel.app/
 
 Rest-API Deployed On PythonAnyWhere: https://djangoreactt.pythonanywhere.com/api/documentation/
 
+Backend Repo: https://github.com/krishnapb01/employee-backend-api-for-react-app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
