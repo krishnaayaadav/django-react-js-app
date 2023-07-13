@@ -1,5 +1,6 @@
-# Django React JS Employees Management System 
-![reactjs-fullStack-app](https://github.com/krishnapb01/react-js-crud-ui/assets/123397686/537c5f14-782a-44e8-9a1b-00fb9c80c8c9)
+# Django React JS Employees Management System
+![react-js-crud](https://github.com/krishnapb01/django-react-js-crud-app/assets/123397686/a8f9ed1a-0fe7-4df6-b235-6fa098878fb3)
+ 
 
 
 React App Deployed On VerCel
