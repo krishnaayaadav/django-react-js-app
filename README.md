@@ -4,7 +4,7 @@
 
 
 React App Deployed On VerCel
-Live projects: https://react-js-crud-ui.vercel.app/
+Live projects: https://django-react-library-managment-system.vercel.app/
 
 Rest-API Deployed On PythonAnyWhere: https://djangoreactt.pythonanywhere.com/api/documentation/
 
